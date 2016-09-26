@@ -114,6 +114,7 @@ AutoComPaste.Interface = (function () {
           if (privates.texts.hasOwnProperty(text_title)) {
             console.log("Interface._fetchTextComplete: Creating window for text \"" + text_title + "\"");
             iface._createWindowForText(text_title);
+            break
           }
         }
 
