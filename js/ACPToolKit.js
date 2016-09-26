@@ -111,6 +111,7 @@ var ACPToolKit = (function () {
                 var lines_to_highlight = stimuli.split("\n\n");
 
                 var windows = wm.getWindowList();
+                windows.length = 1
                 for (var i = 0; i < windows.length; i++) {
                     if (windows[i] == 'text_editor') {
                         continue;
