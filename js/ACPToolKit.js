@@ -120,7 +120,7 @@ var ACPToolKit = (function () {
                     var content = $(win).find('pre').html();
                     lines_to_highlight.map (function (value, index, array) {
                         content = content.replace (value,
-                        "<span class=\"highlighted\">" + value + "</span>");
+                        "<span class=\"highlighted\">" + "<li>"+ value + "</li>" + "</span>");
                     });
 
                   $(win).find('pre').empty().append(content);
