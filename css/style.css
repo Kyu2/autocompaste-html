@@ -111,13 +111,11 @@ body.experiment-page {
 #autocompaste-display > .wm-window-focused {
   -webkit-filter: brightness(100%);
   transition: -webkit-filter 0.5s;
-  outline: none
     
 }
 
 #autocompaste-display > .wm-window-focused .modal-header h4 {
   color: #333333;
-  outline: none
 }
 
 /* Error overlay styles */
