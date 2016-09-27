@@ -118,9 +118,10 @@ var ACPToolKit = (function () {
                         trial_value = i;
                         continue;
                     }
-
+                    
+                    var text_win = wm.getWindowContent(windows[trial_value]);
+                    $(text_win).append(wm.getWindowContent(windows[i]));
                     var win = wm.getWindowContent(windows[i]);
-                    wm.setWindowContent(windows[trial_value],win, wm.getWindowContent(windows[trial_value]));
                     var content = $(win).find('pre').html();
                     lines_to_highlight.map (function (value, index, array) {
                         content = content.replace (value,
