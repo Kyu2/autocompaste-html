@@ -388,7 +388,7 @@ var WindowManager = (function () {
      * @param {String} name    The name of the window
      * @param {Object} content The content to be set
      */
-    this.setWindowContent = function setWindowContent (name, content1, content) {
+    this.setWindowContent = function setWindowContent (name, content, content1) {
       if (name == undefined) {
         console.error("WindowManager.setWindowContent: name must be given");
         return;
@@ -412,8 +412,8 @@ var WindowManager = (function () {
       // Set the content.
       $(privates.windows[name].struct)
         .find('.modal-body')
-        .append(content1)
-        .append(content);
+        .append(content)
+        .append(content1);
     };
 
     /**
