@@ -143,14 +143,14 @@ AutoComPaste.Interface = (function () {
 //        privates.wm.setWindowContent('text_editor', acp_textarea, privates.texts[0]);
 //        acp_textarea.focus();
         
-        privates.wm.createWindow("text_editor", 500,800);
+        privates.wm.createWindow("text_editor", 1000,400);
         privates.wm.setWindowTitle("text_editor", "Text Editor");
         privates.wm.setWindowContent('text_editor',
         $(document.createElement('textarea'))
           .append(privates.texts[text_title])
           .attr({
-                              rows: 10,
-                              cols: 800
+                              rows: 1000,
+                              cols: 400
                             }), acp_textarea
         );
         acp_textarea.focus();
