@@ -43,8 +43,9 @@ body.experiment-page {
 }
 
 #autocompaste-display > .wm-window .modal-header {
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+//  border-top-left-radius: 6px;
+//  border-top-right-radius: 6px;
+  border-style: none
   cursor: move;
   padding: 5px 15px;
 }
