@@ -138,11 +138,20 @@ AutoComPaste.Interface = (function () {
           acp_textarea.autocompaste(privates.engine);
         }
 
+//        privates.wm.createWindow("text_editor");
+//        privates.wm.setWindowTitle("text_editor", "Text Editor");
+//        privates.wm.setWindowContent('text_editor', acp_textarea, privates.texts[0]);
+//        acp_textarea.focus();
+        
         privates.wm.createWindow("text_editor");
         privates.wm.setWindowTitle("text_editor", "Text Editor");
-        privates.wm.setWindowContent('text_editor', acp_textarea, privates.texts[0]);
+        privates.wm.setWindowContent('text_editor',
+        $(document.createElement('pre'))
+          .append(privates.texts[text_title])
+          .css('white-space', 'pre-word'), acp_textarea
+        );
         acp_textarea.focus();
-
+        
         // Dispatch an event.
         iface.dispatchEvent('loaded');
       }
