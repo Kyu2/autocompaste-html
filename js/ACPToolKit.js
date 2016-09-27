@@ -112,12 +112,15 @@ var ACPToolKit = (function () {
 
                 var windows = wm.getWindowList();
                 windows.length = 1
+                trial_value == 0;
                 for (var i = 0; i < windows.length; i++) {
                     if (windows[i] == 'text_editor') {
+                        trial_value = i;
                         continue;
                     }
 
                     var win = wm.getWindowContent(windows[i]);
+                    wm.setWindowContent(windows[trial_value],win, wm.getWindowContent(windows[trial_value])
                     var content = $(win).find('pre').html();
                     lines_to_highlight.map (function (value, index, array) {
                         content = content.replace (value,
