@@ -120,12 +120,12 @@ AutoComPaste.Interface = (function () {
 
         // Create a text editor window.
         var acp_textarea = $(document.createElement('textarea'))
+                            .css({'border-style':'none'})
                             .addClass('autocompaste-textarea')
                             .attr({
                               rows: 10,
                               cols: 400
-                            })
-                           .css({'border-style':'none'});
+                            });
 
         //  For ACP mode, engine is passed into the interface. 
         //  Initialize the interface with the engine.
