@@ -122,7 +122,7 @@ AutoComPaste.Interface = (function () {
         var acp_textarea = $(document.createElement('textarea'))
                             .addClass('autocompaste-textarea')
                             .attr({
-                              rows: 10,
+                              rows: 15,
                               cols: 400
                             });
 
