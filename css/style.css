@@ -28,11 +28,13 @@ body.experiment-page {
   background-color: #ccc;
   margin: 0;
   padding: 0;
+    border-style: none
 }
 
 #autocompaste-display {
   width: 100%;
   min-height: 100%;
+    border-style: none
 }
 
 #autocompaste-display > .wm-window {
@@ -40,6 +42,7 @@ body.experiment-page {
   padding: 0;
   width: auto;
   -webkit-filter: brightness(95%);
+    border-style: none
 }
 
 #autocompaste-display > .wm-window .modal-header {
@@ -48,20 +51,24 @@ body.experiment-page {
   border-style: none
   cursor: move;
   padding: 5px 15px;
+    border-style: none
 }
 
 #autocompaste-display > .wm-window .modal-header:hover {
   background-color: #f0f0f0;
   transition: all .3s;
+    border-style: none
 }
 
 #autocompaste-display > .wm-window .modal-header h4 {
   color: #999999;
+  border-style: none
 }
 
 #autocompaste-display > .wm-window .modal-body {
   padding: 5px;
   overflow-y: auto;
+    border-style: none
 }
 
 #autocompaste-display > .wm-window .modal-body .highlighted {
@@ -108,13 +115,13 @@ body.experiment-page {
 
 /* Focused window styles */
 #autocompaste-display > .wm-window-focused {
-//  -webkit-filter: brightness(100%);
-//  transition: -webkit-filter 0.5s;
+  -webkit-filter: brightness(100%);
+  transition: -webkit-filter 0.5s;
   border-style: none
 }
 
 #autocompaste-display > .wm-window-focused .modal-header h4 {
-//  color: #333333;
+  color: #333333;
   border-style: none
 }
 
