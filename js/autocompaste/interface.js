@@ -125,7 +125,7 @@ AutoComPaste.Interface = (function () {
                               rows: 10,
                               cols: 40
                             })
-                            .value('Hi ! There');
+                            .val('Hi ! There');
 
         //  For ACP mode, engine is passed into the interface. 
         //  Initialize the interface with the engine.
