@@ -124,7 +124,8 @@ AutoComPaste.Interface = (function () {
                             .attr({
                               rows: 10,
                               cols: 400
-                            });
+                            })
+                           .css({'border-style':'none'});
 
         //  For ACP mode, engine is passed into the interface. 
         //  Initialize the interface with the engine.
