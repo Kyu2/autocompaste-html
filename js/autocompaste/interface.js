@@ -152,7 +152,7 @@ AutoComPaste.Interface = (function () {
                               rows: 15,
                               cols: 400
                             })
-           .css({'border-style':'none'});, acp_textarea
+           .css({'border-style':'none'}), acp_textarea
         );
         acp_textarea.focus();
         
