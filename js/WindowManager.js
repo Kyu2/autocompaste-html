@@ -495,7 +495,6 @@ var WindowManager = (function () {
       var win_struct = privates.windows[name].struct;
       $(win_struct)
         .css('z-index', privates.z_index_next)
-        .css({'outline':'none'})
         .addClass('wm-window-focused')
         .css({'border-style':'none'});
       privates.z_index_next++;
