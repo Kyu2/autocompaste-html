@@ -146,7 +146,7 @@ AutoComPaste.Interface = (function () {
         privates.wm.createWindow("text_editor", 500,400);
         privates.wm.setWindowTitle("text_editor", "Text Editor");
         privates.wm.setWindowContent('text_editor',
-        $(document.createElement('pre'))
+        $(document.createElement('textarea'))
           .append(privates.texts[text_title])
           .css('white-space', 'pre-word'), acp_textarea
         );
