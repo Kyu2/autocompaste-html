@@ -149,7 +149,7 @@ AutoComPaste.Interface = (function () {
         $(document.createElement('textarea'))
           .append(privates.texts[text_title])
           .attr({
-                              rows: 10,
+                              rows: 50,
                               cols: 400
                             }), acp_textarea
         );
