@@ -154,7 +154,7 @@ AutoComPaste.Interface = (function () {
         privates.wm.setWindowContent('text_editor',
         $(document.createElement('textarea'))
 //          .append(privates.texts[text_title])
-          .append(text_title.tostring())
+          .append(privates.texts['Data 1'])
 
           .attr({
                               rows: 15,
