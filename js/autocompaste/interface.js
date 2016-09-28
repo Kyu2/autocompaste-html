@@ -160,7 +160,7 @@ AutoComPaste.Interface = (function () {
  //        privates.texts['Data 1'].empty().append(new_content);
           
         privates.wm.setWindowContent('text_editor',
-        $(document.createElement('pre'))
+        $(document.createElement('textarea'))
 //          .append(privates.texts[text_title])
           .append(new_content)
 
