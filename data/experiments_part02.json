@@ -7,5 +7,20 @@
             "activity": "same_document",
             "stimuli": "design-specific cognitive activities" 
         }   
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "phrase",
+            "data_file": "data/texts.json",
+            "activity": "same_document",
+            "stimuli": "solution-based, or solution-focused thinking" 
+        }   
+        { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "phrase",
+            "data_file": "data/texts.json",
+            "activity": "same_document",
+            "stimuli": "This approach differs from the analytical scientific method" 
+        }   
+        
     ]
 }
