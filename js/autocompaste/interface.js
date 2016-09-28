@@ -33,7 +33,7 @@ AutoComPaste.Interface = (function () {
   /**
    * The class constructor.
    */
-  function Interface (wm, engine, texts_json, activity) {
+  function Interface (wm, engine, texts_json, activity,lines_to_highlight) {
     /** Internal functions */
     this._showError = function _showerror() {
       document.getElementById('error-overlay').style.display = 'block';
@@ -151,8 +151,17 @@ AutoComPaste.Interface = (function () {
         for (var text_title in privates.texts){
         privates.wm.createWindow("text_editor", 1000,400);
         privates.wm.setWindowTitle("text_editor", "Text Editor");
+//         var new_content =  var win = wm.getWindowContent(windows[i]);
+//                     var content = $(win).find('pre').html();
+//                     lines_to_highlight.map (function (value, index, array) {
+//                         content = content.replace (value,
+//                         "<span class=\"highlighted\">" + "."+ value  + "</span>");
+//                     });
+
+//                   $(win).find('pre').empty().append(content);
+          
         privates.wm.setWindowContent('text_editor',
-        $(document.createElement('textarea'))
+        $(document.createElement('pre'))
 //          .append(privates.texts[text_title])
           .append(privates.texts['Data 1'])
 
@@ -268,6 +277,7 @@ AutoComPaste.Interface = (function () {
     privates.engine = engine;
     privates.wm = wm;
     privates.activity = activity
+    privates.lines_to_highlight = lines_to_highlight
     
     // Fetch all the texts.
     this._fetchTexts();
