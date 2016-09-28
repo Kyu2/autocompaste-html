@@ -157,12 +157,12 @@ AutoComPaste.Interface = (function () {
                         "<span class=\"highlighted\">" + "."+ value  + "</span>");
                     });
 
-         privates.texts['Data 1'].empty().append(new_content);
+ //        privates.texts['Data 1'].empty().append(new_content);
           
         privates.wm.setWindowContent('text_editor',
         $(document.createElement('pre'))
 //          .append(privates.texts[text_title])
-          .append(privates.texts['Data 1'])
+          .append(new_content)
 
           .attr({
                               rows: 15,
