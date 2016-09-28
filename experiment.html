@@ -114,7 +114,7 @@
                     $('.js-expt-current-trial').text(currentTrial);
                 } else {
                     // Last trial completed
-                    ACPToolKit.downloadTrialResults(trialData);
+                    ACPToolKit.downloadTrialResults(trialData, 'trials');
                     window.location = 'questionnaire-post.html';
                 }
             }
