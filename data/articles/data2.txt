@@ -1,15 +1,7 @@
-What is AC voltage? A voltage in which the polarity alternates.
+Unlike analytical thinking, design thinking includes "building up" ideas, with few, or no, limits on breadth during a "brainstorming" phase. This helps reduce fear of failure in the participant(s) and encourages input and participation from a wide variety of sources in the ideation phases. The phrase "thinking outside the box" has been coined to describe one goal of the brainstorming phase and is encouraged, since this can aid in the discovery of hidden elements and ambiguities in the situation and discovering potentially faulty assumptions.
 
-What is Admittance? (symbol "Y") Measure of how easily AC will flow through a circuit. Admittance is the reciprocal of impedance and is measured in siemens.
+One version of the design thinking process has seven stages: define, research, ideate, prototype, choose, implement, and learn. Within these seven steps, problems can be framed, the right questions can be asked, more ideas can be created, and the best answers can be chosen. The steps aren't linear; can occur simultaneously and be repeated. A simpler expression of the process is Robert McKim's phrase "Express–Test–Cycle".An alternative five-phase description of the process is described by Christoph Meinel and Larry Leifer: (re)defining the problem, needfinding and benchmarking, ideating, building, testing.Yet another way to look at it is Shewhart's "Plan-Do-Study-Act" PDSA cycle.
 
-What is alkaline cell? A primary cell that delivers more current than a carbon-zinc cell. Also known as an "alkaline manganese cell".
+Although design is always influenced by individual preferences, the design thinking method shares a common set of traits, mainly: creativity, ambidextrous thinking, teamwork, user-centeredness (empathy), curiosity and optimism.These traits are exemplified by design thinking methods in "serious play".
 
-What is alligator clip? Spring clip on the end of a test lead used to make a temporary connection.
-
-What is alpha? Ratio of collector current to emitter current in a bipolar junction transistor (BJT) Greek letter alpha "a" is the symbol used.
-
-What is alternating current? An electric current that rises to a maximum in one direction, falls back to zero and then rises to a maximum in the opposite direction and then repeats.
-
-What is alternator? Name for an AC generator.
-
-What is ammeter? A meter used to measure current.
+The path through these process steps is not strictly circular. Meinel and Leifer state: "While the stages are simple enough, the adaptive expertise required to choose the right inflection points and appropriate next stage is a high order intellectual activity that requires practice and is learnable."
