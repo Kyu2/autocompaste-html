@@ -33,7 +33,7 @@ AutoComPaste.Interface = (function () {
   /**
    * The class constructor.
    */
-  function Interface (wm, engine, texts_json) {
+  function Interface (wm, engine, texts_json, activity) {
     /** Internal functions */
     this._showError = function _showerror() {
       document.getElementById('error-overlay').style.display = 'block';
@@ -110,14 +110,16 @@ AutoComPaste.Interface = (function () {
         // For every text that we find, we create a new window for it.
         console.log("Interface._fetchTextComplete: Finished fetching all texts");
 
+       if (privates.activity == 'between_documents')
+       {
         for (var text_title in privates.texts) {
           if (privates.texts.hasOwnProperty(text_title)) {
             console.log("Interface._fetchTextComplete: Creating window for text \"" + text_title + "\"");
             iface._createWindowForText(text_title);
-            break
           }
         }
-
+       }       
+          
         // Create a text editor window.
         var acp_textarea = $(document.createElement('textarea'))
                             .css({'border-style':'none'})
@@ -138,12 +140,14 @@ AutoComPaste.Interface = (function () {
           }
           acp_textarea.autocompaste(privates.engine);
         }
-
-//        privates.wm.createWindow("text_editor");
-//        privates.wm.setWindowTitle("text_editor", "Text Editor");
-//        privates.wm.setWindowContent('text_editor', acp_textarea, privates.texts[0]);
-//        acp_textarea.focus();
+      
+       if (privates.activity == 'between_documents'){
+       privates.wm.createWindow("text_editor");
+       privates.wm.setWindowTitle("text_editor", "Text Editor");
+       privates.wm.setWindowContent('text_editor', acp_textarea, privates.texts[0]);
+       }
         
+        if (privates.activity == 'same_document'){
         privates.wm.createWindow("text_editor", 1000,400);
         privates.wm.setWindowTitle("text_editor", "Text Editor");
         privates.wm.setWindowContent('text_editor',
@@ -155,6 +159,7 @@ AutoComPaste.Interface = (function () {
                             })
            .css({'border-style':'none'}), acp_textarea
         );
+        }
         acp_textarea.focus();
         
         // Dispatch an event.
@@ -257,6 +262,7 @@ AutoComPaste.Interface = (function () {
     privates.events = { };
     privates.engine = engine;
     privates.wm = wm;
+    privates.activity = activity
     
     // Fetch all the texts.
     this._fetchTexts();
