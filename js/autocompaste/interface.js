@@ -166,7 +166,15 @@ AutoComPaste.Interface = (function () {
                               rows: 15,
                               cols: 2000
                             })
-           .css({'border-style':'none', 'background-color':'white', 'overflow': 'hidden'}), acp_textarea
+           .css({'border-style':'none', 
+                 'background-color':'white',
+                 'overflow': 'hidden',
+                 'white-space': '-moz-pre-wrap',
+                'white-space': '-pre-wrap',
+                 'white-space': '-o-pre-wrap',
+                 'white-space': 'pre-wrap',
+                 'word-wrap': 'break-word'                 
+                }), acp_textarea
         );
         break
         }
