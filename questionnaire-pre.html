@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>CS4249 Assignment 1</title>
+        <title>HCI Assignment</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
@@ -20,11 +20,11 @@
             <div class="container">
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Welcome</a></li>
-                        <li class="active"><a href="questionnaire-pre.html">Pre Questionnaire</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="questionnaire-pre.html">Pre-experiment Questionnaire</a></li>
                         <li><a href="instructions.html">Instructions</a></li>
                         <li><a href="experiment.html">Experiment</a></li>
-                        <li><a href="questionnaire-post.html">Post Questionnaire</a></li>
+                        <li><a href="questionnaire-post.html">Post-experiment Questionnaire</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,59 +35,113 @@
                 <div class="col-md-8 col-md-offset-2">
                     <h1>Pre-Experiment Questionnaire</h1>
                     <hr>
-                    <p>This part of the interface collects whatever pre-experiment information. Please come up with a basic questionnaire to help you to gather participant information. The purpose of this questionnaire is to report the participant data and convince readers that you have picked an appropriate target user group and the result has certain generalizability.</p>
+                    <p>Please fill the details below </p>
 
-                    <p>Please put all information needed for participant: <span class="js-pid pid"></span></p>
+                    <p>Participant ID: <span class="js-pid pid"></span></p>
 
                     <form id="pre-expt-form">
-                        <div class="form-group">
-                            <label for="q1">Question 1 - Text</label>
-                            <input type="text" class="form-control" id="q1" name="q1" placeholder="Enter answer">
+			<h2>Individual Particulars</h2>
+                     <div class="form-group">
+				
+                            <label for="q1">
+Name
+					</label>
+                            <input type="text" class="form-control" id="q1" name="q1" placeholder="Enter here">
                         </div>
-                        <div class="form-group">
-                            <label for="q2">Question 2 - Radio</label>
+
+				<div class="form-group">
+                            <label for="q2">
+Age
+					</label>
+					<input type="text" class="form-control" id="q1" name="q1" placeholder="Enter here">
+<div class="form-group">
+                            <label for="q3">
+Gender
+					</label>
+					<input type="text" class="form-control" id="q1" name="q1" placeholder="Enter here">
+					<label for="q4">
+Educational Background
+					</label>
+					<input type="text" class="form-control" id="q1" name="q1" placeholder="Enter here">
+                       </div>
+
+                       <h3>Experiment related Information</h3>
+					 <div class="form-group">
+
+                            <label for="q5">
+How often do you use a computer?
+					</label>
+
                             <div class="radio">
                               <label>
-                                <input type="radio" name="q2" id="optionsRadios1" value="radio1">
-                                Radio response 1
+                                <input type="radio" name="q5" id="computer use" value="Enter here">
+                                Everyday
                               </label>
                             </div>
                             <div class="radio">
                               <label>
-                                <input type="radio" name="q2" id="optionsRadios2" value="radio2">
-                                Radio response 2
+                                <input type="radio" name="q5" id="computer use" value="use">
+                                Three days a week
                               </label>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="q3">Question 3 - Checkbox</label>
-                            <div class="checkbox">
+					
+                            <div class="radio">
                               <label>
-                                <input type="checkbox" name="q3" value="checkbox1">
-                                Checkbox response 1
+                                <input type="radio" name="q5" id="computer use" value="use">
+                                Once in two weeks
                               </label>
                             </div>
-                            <div class="checkbox">
+                        
+
+					<div class="form-group">
+					<label for="q6">
+How often do you work with digital text containing documents?
+					</label>
+					<div class="radio">
                               <label>
-                                <input type="checkbox" name="q3" value="checkbox2">
-                                Checkbox response 2
+                                <input type="radio" name="q6" id="computer use" value="use">
+                                Everyday
                               </label>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="q4">Question 4 - Select Options</label>
-                            <select class="form-control" name="q4">
-                                <option value="option1">Option response 1</option>
-                                <option value="option2">Option response 2</option>
-                                <option value="option3">Option response 3</option>
-                                <option value="option4">Option response 4</option>
-                                <option value="option1">Option response 5</option>
-                            </select>
+	<div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="computer use" value="use">
+                                Thrice a week
+                              </label>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="q5">Question 5 - Textarea</label>
-                            <textarea class="form-control" id="q5" name="q5" placeholder="Enter response"></textarea>
+	<div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="computer use" value="use">
+                                Once in two weeks
+                              </label>
+                            </div>
                         </div>
+
+					<label for="q7">
+Do you have any prior experience with any alternative copy-paste techniques?
+					</label>
+					<div class="radio">
+                              <label>
+                                <input type="radio" name="q7" id="computer use" value="use">
+                                Yes
+                              </label>
+                            </div>
+					<div class="radio">
+                              <label>
+                                <input type="radio" name="q6" id="computer use" value="use">
+                                No
+                              </label>
+                            </div>
+     					<div class="form-group">
+                           <label>
+That was quick!
+Now get ready to receive your set of instructions for the experiment.We request you to please  keep yourself focused for the next 10 minutes of the experiment.
+Thank you!!
+					</label>
+
+
                         <button type="submit" class="btn btn-primary btn-lg">Submit</button>
                     </form>
                 </div>
