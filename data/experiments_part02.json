@@ -20,7 +20,7 @@
             "data_file": "data/texts.json",
             "activity": "same_document",
             "stimuli": "This approach differs from the analytical scientific method" 
-        }   
+        },  
          { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "phrase",
