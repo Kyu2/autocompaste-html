@@ -126,7 +126,7 @@ AutoComPaste.Interface = (function () {
                             .addClass('autocompaste-textarea')
                             .attr({
                               rows: 10,
-                              cols: 1200
+                              cols: 1300
                             });
 
         //  For ACP mode, engine is passed into the interface. 
@@ -149,7 +149,7 @@ AutoComPaste.Interface = (function () {
         
         if (privates.activity == 'same_document'){
         for (var text_title in privates.texts){
-        privates.wm.createWindow("text_editor", 1200,400);
+        privates.wm.createWindow("text_editor", 1300,400);
         privates.wm.setWindowTitle("text_editor", "Text Editor");
         var new_content =  privates.texts['Data 1'];
         privates.lines_to_highlight.map (function (value, index, array) {
@@ -164,9 +164,9 @@ AutoComPaste.Interface = (function () {
 
           .attr({
                               rows: 15,
-                              cols: 1200
+                              cols: 1300
                             })
-           .css({'border-style':'none', 'background-color':'white'}), acp_textarea
+           .css({'border-style':'none', 'background-color':'white', 'overflow-x': 'auto}), acp_textarea
         );
         break
         }
