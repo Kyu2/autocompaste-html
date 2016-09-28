@@ -143,7 +143,7 @@ AutoComPaste.Interface = (function () {
                             .addClass('autocompaste-textarea')
                             .attr({
                               rows: 10,
-                              cols: 40
+                              cols: 105
                             });
       }
         //  For ACP mode, engine is passed into the interface. 
