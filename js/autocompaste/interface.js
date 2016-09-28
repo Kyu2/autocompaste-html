@@ -148,17 +148,20 @@ AutoComPaste.Interface = (function () {
        }
         
         if (privates.activity == 'same_document'){
+        for (var text_title in privates.texts){
         privates.wm.createWindow("text_editor", 1000,400);
         privates.wm.setWindowTitle("text_editor", "Text Editor");
         privates.wm.setWindowContent('text_editor',
         $(document.createElement('textarea'))
-          .append(privates.texts['data1'])
+          .append(privates.texts[text_title])
           .attr({
                               rows: 15,
                               cols: 400
                             })
            .css({'border-style':'none'}), acp_textarea
         );
+        break
+        }
         }
         acp_textarea.focus();
         
