@@ -106,7 +106,7 @@ var ACPToolKit = (function () {
                     break;
             }
 
-            var iface = new AutoComPaste.Interface(wm, engine, data_file, activity);
+            var iface = new AutoComPaste.Interface(wm, engine, data_file, activity, stimuli.split("\n\n"));
 
             // Highlight the relevant text.
             iface.addEventListener('loaded', function () {
