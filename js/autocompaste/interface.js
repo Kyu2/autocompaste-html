@@ -122,7 +122,15 @@ AutoComPaste.Interface = (function () {
           
         // Create a text editor window.
         var acp_textarea = $(document.createElement('textarea'))
-                            .css({'border-style':'none'})
+                             .css({'border-style':'none', 
+                          'background-color':'white',
+                          'overflow': 'hidden',
+                          'white-space': '-moz-pre-wrap',
+                          'white-space': '-pre-wrap',
+                      'white-space': '-o-pre-wrap',
+                     'white-space': 'pre-wrap',
+                    'word-wrap': 'break-word'                 
+                })
                             .addClass('autocompaste-textarea')
                             .attr({
                               rows: 10,
