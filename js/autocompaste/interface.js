@@ -121,6 +121,7 @@ AutoComPaste.Interface = (function () {
        }       
           
         // Create a text editor window.
+       if (privates.activity == 'same_document'){
         var acp_textarea = $(document.createElement('textarea'))
                              .css({'border-style':'none', 
                           'background-color':'white',
@@ -136,7 +137,15 @@ AutoComPaste.Interface = (function () {
                               rows: 10,
                               cols: 400
                             });
-
+       } // end if(privates.activity)
+      if (privates.activity == 'between_documents'){ 
+       var acp_textarea = $(document.createElement('textarea'))
+                            .addClass('autocompaste-textarea')
+                            .attr({
+                              rows: 10,
+                              cols: 40
+                            });
+      }
         //  For ACP mode, engine is passed into the interface. 
         //  Initialize the interface with the engine.
         if (privates.engine) {
@@ -156,7 +165,6 @@ AutoComPaste.Interface = (function () {
        }
         
         if (privates.activity == 'same_document'){
-        for (var text_title in privates.texts){
         privates.wm.createWindow("text_editor", 800,400);
         privates.wm.setWindowTitle("text_editor", "Text Editor");
         var new_content =  privates.texts['Data 1'];
@@ -184,8 +192,6 @@ AutoComPaste.Interface = (function () {
                  'word-wrap': 'break-word'                 
                 }), acp_textarea
         );
-        break
-        }
         }
         acp_textarea.focus();
         
