@@ -8,19 +8,7 @@
         "url": "data/articles/data2.txt"
     },
     {
-        "title": "Article 3",
-        "url": "data/articles/Article_3.rtf"
-    },
-    {
-        "title": "Article 4",
-        "url": "data/articles/Article_4.txt"
-    },
-    {
-        "title": "Article 5",
-        "url": "data/articles/Article_5.txt"
-    },
-    {
-        "title": "Article 6",
-        "url": "data/articles/Article_6.txt"
+        "title": "Data 3",
+        "url": "data/articles/data3.txt"
     }
 ]
