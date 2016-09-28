@@ -126,7 +126,7 @@ AutoComPaste.Interface = (function () {
                             .addClass('autocompaste-textarea')
                             .attr({
                               rows: 10,
-                              cols: 400
+                              cols: 1000
                             });
 
         //  For ACP mode, engine is passed into the interface. 
@@ -156,8 +156,6 @@ AutoComPaste.Interface = (function () {
         new_content = new_content.replace (value,
                         "<span class=\"highlighted\">" + "."+ value  + "</span>");
                     });
-
- //        privates.texts['Data 1'].empty().append(new_content);
           
         privates.wm.setWindowContent('text_editor',
         $(document.createElement('pre'))
@@ -166,7 +164,7 @@ AutoComPaste.Interface = (function () {
 
           .attr({
                               rows: 15,
-                              cols: 400
+                              cols: 1000
                             })
            .css({'border-style':'none', 'background-color':'white'}), acp_textarea
         );
