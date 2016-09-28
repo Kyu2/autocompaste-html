@@ -154,7 +154,7 @@ AutoComPaste.Interface = (function () {
         var new_content =  privates.texts['Data 1'];
         privates.lines_to_highlight.map (function (value, index, array) {
         new_content = new_content.replace (value,
-                        "<span class=\"highlighted\">" + "."+ value  + "</span>");
+                        "<span class=\"highlighted\">" +  value  + "</span>");
                     });
           
         privates.wm.setWindowContent('text_editor',
