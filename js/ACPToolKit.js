@@ -113,8 +113,6 @@ var ACPToolKit = (function () {
                 var lines_to_highlight = stimuli.split("\n\n");
 
                 var windows = wm.getWindowList();
-                windows.length = 1
-                trial_value = 0;
                 for (var i = 0; i < windows.length; i++) {
                     if (activity == 'between_documents'){
                     if (windows[i] == 'text_editor') {
