@@ -34,9 +34,9 @@ var ACPToolKit = (function () {
         arrayToCSV([headers, data], 'acp-' + pid + '-' + type);
     }
 
-    module.downloadTrialResults = function (data) {
+    module.downloadTrialResults = function (data, page) {
         var pid = ACPToolKit.getCurrentParticipantId();
-        arrayToCSV(data, 'acp-' + pid + '-trials');
+        arrayToCSV(data, 'acp-' + pid + '-' + page);
     }
 
     function arrayToCSV (twoDiArray, fileName) {
