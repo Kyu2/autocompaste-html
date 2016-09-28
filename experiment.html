@@ -119,7 +119,9 @@
             }
 
             $(document).ready(function () {
-                $.get('data/experiments.json', function (data) {
+                participantId = ACPToolKit.getCurrentParticipantId();
+                // code here to validate the participant ID
+                $.get('data/experiments_'+ participantId.toString() + '.json', function (data) {
                     trialsData = data.experiments;
                     currentTrial = 0;
                     totalNumberOfTrials = trialsData.length;
