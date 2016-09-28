@@ -103,7 +103,8 @@
                                 trialEndTime, trialDuration, accuracy];
                     trialData.push(row);
                 }
-                if (currentTrial < 3) {
+
+                if (currentTrial < totalNumberOfTrials) {
                     ACPToolKit.presentTrial(trialsData[currentTrial]);
                     currentTrial += 1;
                     $('.js-expt-current-trial').text(currentTrial);
