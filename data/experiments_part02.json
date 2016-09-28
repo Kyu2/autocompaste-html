@@ -4,6 +4,7 @@
             "technique": "AUTOCOMPASTE", 
             "granularity": "phrase",
             "data_file": "data/texts.json",
+            "activity": "same_document",
             "stimuli": "design-specific cognitive activities" 
         }   
     ]
