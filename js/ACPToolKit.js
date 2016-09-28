@@ -117,12 +117,9 @@ var ACPToolKit = (function () {
                 trial_value = 0;
                 for (var i = 0; i < windows.length; i++) {
                     if (windows[i] == 'text_editor') {
-                        trial_value = i;
                         continue;
                     }
                     
-                    var text_win = wm.getWindowContent(windows[trial_value]);
-                    $(text_win).append(wm.getWindowContent(windows[i]));
                     var win = wm.getWindowContent(windows[i]);
                     var content = $(win).find('pre').html();
                     lines_to_highlight.map (function (value, index, array) {
