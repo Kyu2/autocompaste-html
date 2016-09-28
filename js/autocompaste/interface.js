@@ -160,7 +160,7 @@ AutoComPaste.Interface = (function () {
  //        privates.texts['Data 1'].empty().append(new_content);
           
         privates.wm.setWindowContent('text_editor',
-        $(document.createElement('textarea'))
+        $(document.createElement('pre'))
 //          .append(privates.texts[text_title])
           .append(new_content)
 
@@ -168,7 +168,7 @@ AutoComPaste.Interface = (function () {
                               rows: 15,
                               cols: 400
                             })
-           .css({'border-style':'none'}), acp_textarea
+           .css({'border-style':'none', 'background-color':'white'}), acp_textarea
         );
         break
         }
