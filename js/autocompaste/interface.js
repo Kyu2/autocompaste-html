@@ -151,14 +151,13 @@ AutoComPaste.Interface = (function () {
         for (var text_title in privates.texts){
         privates.wm.createWindow("text_editor", 1000,400);
         privates.wm.setWindowTitle("text_editor", "Text Editor");
-//         var new_content =  var win = wm.getWindowContent(windows[i]);
-//                     var content = $(win).find('pre').html();
-//                     lines_to_highlight.map (function (value, index, array) {
-//                         content = content.replace (value,
-//                         "<span class=\"highlighted\">" + "."+ value  + "</span>");
-//                     });
+        var new_content =  privates.texts['Data 1'];
+        privates.lines_to_highlight.map (function (value, index, array) {
+        new_content = new_content.replace (value,
+                        "<span class=\"highlighted\">" + "."+ value  + "</span>");
+                    });
 
-//                   $(win).find('pre').empty().append(content);
+         privates.texts.['Data 1'].empty().append(new_content);
           
         privates.wm.setWindowContent('text_editor',
         $(document.createElement('pre'))
