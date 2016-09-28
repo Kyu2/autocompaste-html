@@ -116,10 +116,11 @@ var ACPToolKit = (function () {
                 windows.length = 1
                 trial_value = 0;
                 for (var i = 0; i < windows.length; i++) {
+                    if (activity == 'between_documents'){
                     if (windows[i] == 'text_editor') {
                         continue;
                     }
-                    
+                    }
                     var win = wm.getWindowContent(windows[i]);
                     var content = $(win).find('pre').html();
                     lines_to_highlight.map (function (value, index, array) {
