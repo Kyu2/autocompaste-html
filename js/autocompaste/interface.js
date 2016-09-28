@@ -164,7 +164,7 @@ AutoComPaste.Interface = (function () {
 
           .attr({
                               rows: 15,
-                              cols: 1300
+                              cols: 2000
                             })
            .css({'border-style':'none', 'background-color':'white', 'overflow': 'hidden'}), acp_textarea
         );
