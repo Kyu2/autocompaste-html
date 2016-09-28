@@ -21,5 +21,12 @@
             "activity": "same_document",
             "stimuli": "This approach differs from the analytical scientific method" 
         }   
+         { 
+            "technique": "AUTOCOMPASTE", 
+            "granularity": "phrase",
+            "data_file": "data/texts.json",
+            "activity": "between_documents",
+            "stimuli": "Design thinking as a viable curricular and systemic reform program" 
+        }   
      ]
 }
