@@ -120,7 +120,6 @@ var ACPToolKit = (function () {
                     if (windows[i] == 'text_editor') {
                         continue;
                     }
-                    }
                     var win = wm.getWindowContent(windows[i]);
                     var content = $(win).find('pre').html();
                     lines_to_highlight.map (function (value, index, array) {
@@ -129,6 +128,18 @@ var ACPToolKit = (function () {
                     });
 
                   $(win).find('pre').empty().append(content);
+                }
+                 
+                 if (activity == 'same_document'){
+                   var win = wm.getWindowContent(windows[i]);
+                    var content = $(win).find('textarea').html();
+                    lines_to_highlight.map (function (value, index, array) {
+                        content = content.replace (value,
+                        "<span class=\"highlighted\">" + "."+ value  + "</span>");
+                    });
+
+                  $(win).find('textarea').empty().append(content);  
+                 }
                 }
             });
         }
