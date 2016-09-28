@@ -165,7 +165,7 @@ AutoComPaste.Interface = (function () {
        }
         
         if (privates.activity == 'same_document'){
-        privates.wm.createWindow("text_editor", 1100 ,700); //width, height
+        privates.wm.createWindow("text_editor", 400 ,500); //width, height
         privates.wm.setWindowTitle("text_editor", "Text Editor");
         var new_content =  privates.texts['Data 1'];
         privates.lines_to_highlight.map (function (value, index, array) {
