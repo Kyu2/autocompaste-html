@@ -127,20 +127,6 @@ var ACPToolKit = (function () {
 
                   $(win).find('pre').empty().append(content);
                 }
-                 
-                 if (activity == 'same_document'){
-                   if (windows[i] == 'text_editor') {
-            
-                     var win = wm.getWindowContent(windows[i]);
-                    var content = $(win).find('textarea').html();
-                    lines_to_highlight.map (function (value, index, array) {
-                        content = content.replace (value,
-                        "<span class=\"highlighted\">" + "."+ value  + "</span>");
-                    });
-
-                  $(win).find('textarea').empty().append(content);  
-                 } // end if(windows[i] == 'text_editor')
-                 } // end if (activity == 'same_document')
                 } //end forloop
             });
         }
