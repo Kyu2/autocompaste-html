@@ -153,7 +153,9 @@ AutoComPaste.Interface = (function () {
         privates.wm.setWindowTitle("text_editor", "Text Editor");
         privates.wm.setWindowContent('text_editor',
         $(document.createElement('textarea'))
-          .append(privates.texts[text_title])
+//          .append(privates.texts[text_title])
+          .append(text_title.tostring())
+
           .attr({
                               rows: 15,
                               cols: 400
