@@ -135,7 +135,7 @@ AutoComPaste.Interface = (function () {
                             .addClass('autocompaste-textarea')
                             .attr({
                               rows: 10,
-                              cols: 100
+                              cols: 105
                             });
        } // end if(privates.activity)
       if (privates.activity == 'between_documents'){ 
