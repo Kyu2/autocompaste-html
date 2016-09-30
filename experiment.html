@@ -158,15 +158,15 @@
                             ACPToolKit.presentTrial(trialsData[modifiedTrial]);}                     
                     
                     }
-                    
+                    //for adding a break
+                    if (currentTrial == 36 || currentTrial == 72){
+                        alert("Please take a small break (of about 60 seconds) to rest. Press the OK button when you are ready")
+                    }                    
                     currentTrial += 1;
                     $('.js-expt-current-trial').text(currentTrial);
                     $('.js-expt-current-block').text(currentBlock);
                                       
-                    //for adding a break
-                    if (currentTrial == 36 || currentTrial == 72){
-                        alert("Please take a small break (of about 60 seconds) to rest. Press the OK button when you are ready")
-                    }
+
                 } else {
                     // Last trial completed
                     ACPToolKit.downloadTrialResults(trialData, 'trials');
