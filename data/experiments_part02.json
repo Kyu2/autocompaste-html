@@ -83,6 +83,6 @@
             "data_file": "data/texts.json",
             "activity": "between_documents",
             "stimuli": "In addition to enriching curriculum and expanding student perspectives, design thinking can also benefit educators." 
-        }, 
+        } 
      ]
 }
