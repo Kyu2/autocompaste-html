@@ -55,7 +55,7 @@
                                 <td><span class="js-expt-current-trial"></span> / <span class="js-expt-num-trials"></span></td>
                             </tr>
                             <tr>
-                                <td>Trial</td>
+                                <td>Block</td>
                                 <td><span class="js-expt-current-block"></span> / <span class="js-expt-num-blocks"></span></td>
                             </tr>
                         </tbody>
@@ -183,7 +183,7 @@
                     counter_3 = 0;
                     totalNumberOfTrials = (trialsData.length)*totalNumberOfBlocks;
                     $('.js-expt-num-trials').text(totalNumberOfTrials);
-                    $('.js-expt-num-blocks').text(totalNumberOfTrials);
+                    $('.js-expt-num-blocks').text(totalNumberOfBlocks);
                     trialData.push(headers);
                     next();
                     pid = ACPToolKit.getCurrentParticipantId();
