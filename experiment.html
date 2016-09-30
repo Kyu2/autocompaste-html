@@ -54,6 +54,10 @@
                                 <td>Trial</td>
                                 <td><span class="js-expt-current-trial"></span> / <span class="js-expt-num-trials"></span></td>
                             </tr>
+                            <tr>
+                                <td>Trial</td>
+                                <td><span class="js-expt-current-block"></span> / <span class="js-expt-num-blocks"></span></td>
+                            </tr>
                         </tbody>
                     </table>
                     <p>Please find the text in the red box and copy-paste the same <span class="js-expt-granularity">Phrase-Sentence-Paragraph combination </span> using the <span class="js-expt-technique">AUTOCOMPASTE</span> technique from one of the article windows.</p>
@@ -96,6 +100,7 @@
                     var granularity = trialResult.granularity;
                     var activity = trialResult.activity;
                     var trialNum = currentTrial;
+                    var blockNum = currentBlock;
                     var stimuli = trialResult.stimuli;
                     var userResponse = trialResult.user_response;
                     var trialStartTime = trialResult.start_time;
@@ -103,16 +108,60 @@
                     var trialDuration = trialResult.duration;
                     var accuracy = stimuli === userResponse ? 1 : 0;
 
-                    var row = [pid, technique, granularity, activity, trialNum,
+                    var row = [pid, technique, granularity, activity, trialNum, blockNum,
                                 stimuli, userResponse, trialStartTime,
                                 trialEndTime, trialDuration, accuracy];
                     trialData.push(row);
                 }
 
                 if (currentTrial < totalNumberOfTrials) {
+                    // setting the blocks
+                    if(currentTrial < 36){
+                    currentBlock = 1;
                     ACPToolKit.presentTrial(trialsData[currentTrial]);
+                    }
+                    else if((currentTrial >= 36) and (currentTrial < 72)){
+                        currentBlock = 2;
+                        if(counter_2  == 0){
+                            
+                            modifiedTrial = (currentTrial - 36) + 1;
+                            counter_2 += 1;
+                            ACPToolKit.presentTrial(trialsData[modifiedTrial]);}
+                        else if(counter_2  == 1){
+                            
+                            modifiedTrial = (currentTrial - 36) + 1;
+                            counter_2 += 1;
+                            ACPToolKit.presentTrial(trialsData[modifiedTrial]);}                    
+                        else if(counter_2  == 2){
+                            
+                            modifiedTrial = (currentTrial - 36) - 2 ;
+                            counter_2 = 0;
+                            ACPToolKit.presentTrial(trialsData[modifiedTrial]);}                     
+                    
+                    }
+                    else if (currentTrial >= 72){
+                        currentBlock = 3;
+                       if(counter_3  == 0){
+                            
+                            modifiedTrial = (currentTrial - 72) + 1;
+                            counter_3 += 1;
+                            ACPToolKit.presentTrial(trialsData[modifiedTrial]);}
+                        else if(counter_3  == 1){
+                            
+                            modifiedTrial = (currentTrial - 72) + 1;
+                            counter_3 += 1;
+                            ACPToolKit.presentTrial(trialsData[modifiedTrial]);}                    
+                        else if(counter_3  == 2){
+                            
+                            modifiedTrial = (currentTrial - 72) - 2 ;
+                            counter_3 = 0;
+                            ACPToolKit.presentTrial(trialsData[modifiedTrial]);}                     
+                    
+                    }
+
                     currentTrial += 1;
                     $('.js-expt-current-trial').text(currentTrial);
+                    $('.js-expt-current-block').text(currentBlock);
                 } else {
                     // Last trial completed
                     ACPToolKit.downloadTrialResults(trialData, 'trials');
@@ -124,12 +173,17 @@
                 participantId = ACPToolKit.getCurrentParticipantId();
                 // code here to validate the participant ID
 //                $.get('data/experiments_'+ participantId.toString() + '.json', function (data) {
-                $.get('data/experiments_part02.json', function (data) {
+                $.get('data/experiments_part01.json', function (data) {
 
                     trialsData = data.experiments;
                     currentTrial = 0;
-                    totalNumberOfTrials = trialsData.length;
+                    currentBlock = 1;
+                    totalNumberOfBlocks = 3
+                    counter_2 = 0;
+                    counter_3 = 0;
+                    totalNumberOfTrials = (trialsData.length)*totalNumberOfBlocks;
                     $('.js-expt-num-trials').text(totalNumberOfTrials);
+                    $('.js-expt-num-blocks').text(totalNumberOfTrials);
                     trialData.push(headers);
                     next();
                     pid = ACPToolKit.getCurrentParticipantId();
