@@ -84,7 +84,7 @@
             "activity": "between_documents",
             "stimuli": "Design thinking as a viable curricular and systemic reform program is increasingly being recognized by educators. \"Much of today's education system guides students toward finding the correct answers to fill-in-the blanks on standardized tests, as this kind of instruction facilitates streamlined assessments to measure success or failure... It is critical that, particularly in underserved schools this model of learning does not continue to prevail. Students need both the skills and the tools to participate in a society where problems are increasingly complex and nuanced understandings are vital.\"" 
         }, 
-         
+         {
             "technique": "AUTOCOMPASTE", 
             "granularity": "Phrase",
             "data_file": "data/texts.json",
@@ -210,7 +210,7 @@
             "activity": "between_documents",
             "stimuli": "Design thinking as a viable curricular and systemic reform program is increasingly being recognized by educators. \"Much of today's education system guides students toward finding the correct answers to fill-in-the blanks on standardized tests, as this kind of instruction facilitates streamlined assessments to measure success or failure... It is critical that, particularly in underserved schools this model of learning does not continue to prevail. Students need both the skills and the tools to participate in a society where problems are increasingly complex and nuanced understandings are vital.\"" 
         }, 
-         
+         {
             "technique": "TRADITIONAL", 
             "granularity": "Phrase",
             "data_file": "data/texts.json",
