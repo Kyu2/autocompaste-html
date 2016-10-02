@@ -86,7 +86,11 @@
             "stimuli": "Although design is always influenced" 
         }, 
          { 
-            
+             "technique": "AUTOCOMPASTE", 
+            "granularity": "Phrase",
+            "data_file": "data/texts.json",
+            "activity": "between_documents",
+            "stimuli": "Design thinking identifies and investigates"
         }, 
          {
             "technique": "AUTOCOMPASTE", 
@@ -106,10 +110,10 @@
         }, 
          { 
              "technique": "AUTOCOMPASTE", 
-            "granularity": "Paragraph",
+            "granularity": "sentence",
             "data_file": "data/texts.json",
             "activity": "same_document",
-            "stimuli": "This approach differs from the analytical scientific method, which begins by thoroughly defining all parameters of a problem to create a solution. Design thinking identifies and investigates with known and ambiguous aspects of the current situation to discover hidden parameters and open alternative paths that may lead to the goal. Because design thinking is iterative, intermediate \"solutions\" are also potential starting points of alternative paths, including redefining of the initial problem." 
+            "stimuli": "This approach differs from the analytical scientific method, which begins by thoroughly defining all parameters of a problem to create a solution." 
         },
          { 
             "technique": "AUTOCOMPASTE", 
@@ -126,15 +130,6 @@
             "stimuli": "Unlike analytical thinking, design thinking includes \"building up\" ideas, with few, or no, limits on breadth during a \"brainstorming\" phase." 
             
         },
-         { 
-            "technique": "AUTOCOMPASTE", 
-            "granularity": "sentence",
-            "data_file": "data/texts.json",
-            "activity": "between_documents",
-            "stimuli": "Design thinking is a formal method for practical,creative resolution of problems and creation of solutions,with the intent of an improved future result." 
-            
-        },
-        
           { 
              "technique": "AUTOCOMPASTE", 
             "granularity": "sentence",
@@ -142,7 +137,7 @@
             "activity": "between_documents",
             "stimuli": "In addition to enriching curriculum and expanding student perspectives,design thinking can also benefit educators" 
         },   
-        { 
+       { 
             "technique": "TRADITIONAL", 
             "granularity": "Paragraph",
             "data_file": "data/texts.json",
@@ -155,7 +150,6 @@
             "data_file": "data/texts.json",
             "activity": "same_document",
             "stimuli": "This approach differs from the analytical scientific method, which begins by thoroughly defining all parameters of a problem to create a solution. Design thinking identifies and investigates with known and ambiguous aspects of the current situation to discover hidden parameters and open alternative paths that may lead to the goal. Because design thinking is iterative, intermediate \"solutions\" are also potential starting points of alternative paths, including redefining of the initial problem."           
-            
         },   
         { 
             "technique": "TRADITIONAL", 
@@ -170,8 +164,7 @@
             "data_file": "data/texts.json",
             "activity": "between_documents",
             "stimuli": "Unlike analytical thinking, design thinking includes \"building up\" ideas, with few, or no, limits on breadth during a \"brainstorming\" phase. This helps reduce fear of failure in the participant(s) and encourages input and participation from a wide variety of sources in the ideation phases. The phrase \"thinking outside the box\" has been coined to describe one goal of the brainstorming phase and is encouraged, since this can aid in the discovery of hidden elements and ambiguities in the situation and discovering potentially faulty assumptions." 
-             
-           
+
         }, 
          { 
             "technique": "TRADITIONAL", 
@@ -179,8 +172,7 @@
             "data_file": "data/texts.json",
             "activity": "between_documents",
             "stimuli": "By considering both present and future conditions and parameters of the problem, alternative solutions may be explored simultaneously. Nigel Cross asserted that this type of thinking most often happens in the built, or artificial, environment (as in artifacts)." 
-         
-            
+
         }, 
          { 
             "technique": "TRADITIONAL", 
@@ -228,7 +220,11 @@
             "stimuli": "Although design is always influenced" 
         }, 
          { 
-            
+             "technique": "TRADITIONAL", 
+            "granularity": "Phrase",
+            "data_file": "data/texts.json",
+            "activity": "between_documents",
+            "stimuli": "Design thinking identifies and investigates"
         }, 
          {
             "technique": "TRADITIONAL", 
@@ -248,10 +244,10 @@
         }, 
          { 
              "technique": "TRADITIONAL", 
-            "granularity": "Paragraph",
+            "granularity": "sentence",
             "data_file": "data/texts.json",
             "activity": "same_document",
-            "stimuli": "This approach differs from the analytical scientific method, which begins by thoroughly defining all parameters of a problem to create a solution. Design thinking identifies and investigates with known and ambiguous aspects of the current situation to discover hidden parameters and open alternative paths that may lead to the goal. Because design thinking is iterative, intermediate \"solutions\" are also potential starting points of alternative paths, including redefining of the initial problem." 
+            "stimuli": "This approach differs from the analytical scientific method, which begins by thoroughly defining all parameters of a problem to create a solution." 
         },
          { 
             "technique": "TRADITIONAL", 
@@ -268,22 +264,14 @@
             "stimuli": "Unlike analytical thinking, design thinking includes \"building up\" ideas, with few, or no, limits on breadth during a \"brainstorming\" phase." 
             
         },
-        { 
-            "technique": "TRADITIONAL", 
-            "granularity": "sentence",
-            "data_file": "data/texts.json",
-            "activity": "between_documents",
-            "stimuli": "Design thinking is a formal method for practical,creative resolution of problems and creation of solutions,with the intent of an improved future result." 
-            
-        },
           { 
              "technique": "TRADITIONAL", 
             "granularity": "sentence",
             "data_file": "data/texts.json",
             "activity": "between_documents",
             "stimuli": "In addition to enriching curriculum and expanding student perspectives,design thinking can also benefit educators" 
-        }        
-         
+        }
+       
          
        ]
 }
