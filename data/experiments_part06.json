@@ -278,7 +278,7 @@
             "data_file": "data/texts.json",
             "activity": "between_documents",
             "stimuli": "Design thinking identifies and investigates" 
-        }, 
+        }
       
        ]
 }
