@@ -24,7 +24,6 @@
             "stimuli": "By considering both present and future conditions and parameters of the problem, alternative solutions may be explored simultaneously. Nigel Cross asserted that this type of thinking most often happens in the built, or artificial, environment (as in artifacts)." 
             
         },
-          
         { 
             "technique": "TRADITIONAL", 
             "granularity": "Paragraph",
@@ -48,7 +47,6 @@
             "activity": "between_documents",
             "stimuli": "Design thinking as a viable curricular and systemic reform program is increasingly being recognized by educators. \"Much of today's education system guides students toward finding the correct answers to fill-in-the blanks on standardized tests, as this kind of instruction facilitates streamlined assessments to measure success or failure... It is critical that, particularly in underserved schools this model of learning does not continue to prevail. Students need both the skills and the tools to participate in a society where problems are increasingly complex and nuanced understandings are vital.\"" 
         },
-       
        { 
             "technique": "TRADITIONAL", 
             "granularity": "sentence",
@@ -161,8 +159,7 @@
             "stimuli": "By considering both present and future conditions and parameters of the problem, alternative solutions may be explored simultaneously. Nigel Cross asserted that this type of thinking most often happens in the built, or artificial, environment (as in artifacts)." 
             
         },
-          
-        { 
+       { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "Paragraph",
             "data_file": "data/texts.json",
@@ -185,7 +182,6 @@
             "activity": "between_documents",
             "stimuli": "Design thinking as a viable curricular and systemic reform program is increasingly being recognized by educators. \"Much of today's education system guides students toward finding the correct answers to fill-in-the blanks on standardized tests, as this kind of instruction facilitates streamlined assessments to measure success or failure... It is critical that, particularly in underserved schools this model of learning does not continue to prevail. Students need both the skills and the tools to participate in a society where problems are increasingly complex and nuanced understandings are vital.\"" 
         }, 
-        
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "sentence",
@@ -229,7 +225,6 @@
             "activity": "between_documents",
             "stimuli": "In addition to enriching curriculum and expanding student perspectives,design thinking can also benefit educators." 
         },
-        
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "Phrase",
@@ -274,7 +269,6 @@
             "data_file": "data/texts.json",
             "activity": "between_documents",
             "stimuli": "Design thinking identifies and investigates" 
-        }, 
-
-       ]
+        } 
+    ]
 }
