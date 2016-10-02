@@ -13,15 +13,13 @@
             "data_file": "data/texts.json",
             "activity": "same_document",
             "stimuli": "solution-based, or solution-focused thinking" 
-            
         },   
         { 
             "technique": "AUTOCOMPASTE", 
             "granularity": "Phrase",
             "data_file": "data/texts.json",
             "activity": "same_document",
-            "stimuli": "This approach differs from the analytical scientific method"
-             
+            "stimuli": "This approach differs from the analytical scientific method" 
         },  
          { 
              "technique": "AUTOCOMPASTE", 
@@ -29,7 +27,6 @@
             "data_file": "data/texts.json",
             "activity": "between_documents",
             "stimuli": "Design thinking as a viable curricular and systemic reform program" 
-           
         }, 
          { 
             "technique": "AUTOCOMPASTE", 
@@ -118,15 +115,15 @@
             "stimuli": "Design thinking is a formal method for practical, creative resolution of problems and creation of solutions, with the intent of an improved future result." 
         },
          { 
-            "technique": "AUTOCOMPASTE", 
+            "technique": "TRADITIONAL", 
             "granularity": "sentence",
             "data_file": "data/texts.json",
             "activity": "between_documents",
             "stimuli": "Unlike analytical thinking, design thinking includes \"building up\" ideas, with few, or no, limits on breadth during a \"brainstorming\" phase." 
             
-        },
-          { 
-            "technique": "AUTOCOMPASTE", 
+        }, 
+              { 
+            "technique": "TRADITIONAL", 
             "granularity": "Phrase",
             "data_file": "data/texts.json",
             "activity": "same_document",
@@ -138,15 +135,13 @@
             "data_file": "data/texts.json",
             "activity": "same_document",
             "stimuli": "solution-based, or solution-focused thinking" 
-            
         },   
         { 
             "technique": "TRADITIONAL", 
             "granularity": "Phrase",
             "data_file": "data/texts.json",
             "activity": "same_document",
-            "stimuli": "This approach differs from the analytical scientific method"
-             
+            "stimuli": "This approach differs from the analytical scientific method" 
         },  
          { 
              "technique": "TRADITIONAL", 
@@ -154,7 +149,6 @@
             "data_file": "data/texts.json",
             "activity": "between_documents",
             "stimuli": "Design thinking as a viable curricular and systemic reform program" 
-           
         }, 
          { 
             "technique": "TRADITIONAL", 
@@ -250,7 +244,6 @@
             "stimuli": "Unlike analytical thinking, design thinking includes \"building up\" ideas, with few, or no, limits on breadth during a \"brainstorming\" phase." 
             
         }
-         
        ]
 }
 
